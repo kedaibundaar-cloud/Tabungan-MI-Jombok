@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MI MIFTAHUL ULUM JOMBOK - Tabungan Sekolah</title>
+  <!-- Google Fonts for Mobile Game Aesthetic -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Russo+One&family=Exo:wght@400;600;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Data Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.28/jspdf.plugin.autotable.min.js"></script>
+  <style>
+    :root {
+      --game-blue: #1e3a8a;
+      --game-yellow: #facc15;
+      --game-green: #22c55e;
+      --game-dark: #0f172a;
+    }
+    body {
+      font-family: 'Exo', sans-serif;
+      background-color: #0f172a;
+      color: white;
+      overflow-x: hidden;
+    }
+    .game-font { font-family: 'Orbitron', sans-serif; }
+    .heading-font { font-family: 'Russo One', sans-serif; }
+    .card-glow {
+      box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
+      border: 1px solid rgba(59, 130, 246, 0.4);
+    }
+    .card-glow:hover {
+      box-shadow: 0 0 25px rgba(59, 130, 246, 0.6);
+      transform: translateY(-2px);
+    }
+    .btn-game {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 800;
+    }
+    .btn-game:hover {
+      transform: scale(1.05);
+      filter: brightness(1.2);
+    }
+    /* Hide scrollbars but keep functionality */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #1e293b; }
+    ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 10px; }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "recharts": "https://esm.sh/recharts@^3.7.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
